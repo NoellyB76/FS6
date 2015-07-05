@@ -1,0 +1,27 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+      <ion-toggle  ng-model="settings.enableFriends">
+        Update only when connected to WiFi
+      </ion-toggle>
+      <ion-toggle>
+        Cache downloaded resources (may take up LARGE amounts of storage space!)
+      </ion-toggle>
+    </ion-list>
+
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Username</span>
+        <input type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Service Location</span>
+        <input type="text" placeholder="ex: http://www.gso360.com/services/mobilefurnitureservice.aspx">
+      </label>
+    </div>
+  </ion-content>
+</ion-view>

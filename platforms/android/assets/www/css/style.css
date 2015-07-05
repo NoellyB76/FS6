@@ -1,0 +1,31 @@
+/* Empty. Add your own CSS if you like */
+body {
+    cursor: url('../img/finger.png'), auto;
+    background-color: #f05a49;
+}
+
+.background, .background .pane, .background .item, .background .item-complex .item-content{
+    background-color: #f05a49;
+
+}
+.frame_look_feel {
+    background-color: #f05a49;
+}
+
+img{
+    width: 100% !important;
+}
+
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+    line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+    display: block !important;
+}

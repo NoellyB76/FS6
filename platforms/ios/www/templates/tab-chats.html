@@ -1,0 +1,17 @@
+
+ion-view view-title="FurnitureItems">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="furnitureItem in furnitureItems" type="item-text-wrap" href="#/tab/furnitureItems/{{furnitureItem.id}}">
+        <img ng-src="{{furnitureItem.face}}">
+        <h2>{{furnitureItem.name}}</h2>
+        <p>{{furnitureItem.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(furnitureItem)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
